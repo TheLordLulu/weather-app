@@ -1,8 +1,7 @@
 import React from "react";
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+
 import {
-  UilArrowUp,
-  UilArrowDown,
+  
   UilTemperature,
   UilTear,
   UilWind,

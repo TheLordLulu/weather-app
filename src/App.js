@@ -1,10 +1,10 @@
 import "./App.css";
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+
 import TopButtons from "./components/TopButtons";
 import Inputs from "./components/Inputs";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TempAndDetails from "./components/TempAndDetails";
-import Forcast from "./components/Forcast";
+// import Forcast from "./components/Forcast";
 import getFormattedWeatherData from "./services/weatherService";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
