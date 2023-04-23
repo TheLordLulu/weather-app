@@ -38,15 +38,17 @@ function Inputs({setQuery, units, setUnits}) {
 
 
   return (
-    <div className="flex flex-row justify-center my-6">
-      <div className="flex flex-row w-3/4 items-center justify-center space-x-4">
+    <div className="flex fixed left-[50%] top-[95%] transform translate-x-[-50%] translate-y-[-50%] ">
+      <div className="flex flex-row w-full justify-center space-x-2">
         <input
         value={city}
         onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
-          className="text-xl font-light p-2 w-full shadow-xl  focus:outline-none capitalize placeholder:lowercase "
-          placeholder="Search for city..."
+          className="text-sm font-medium text-white p-1 shadow-xl bg-transparent focus:outline-none capitalize placeholder:lowercase    xsm:text-md sm:text-lg md:text-xl lg:text-2xl "
+          placeholder="Search..."
         />
+         
+         <div className="flex flex-row justify-center space-x-1">
         <UilSearch
           size={25}
           className="text-white cursor-pointer transition ease-out hover:scale-125"
@@ -57,9 +59,10 @@ function Inputs({setQuery, units, setUnits}) {
           className="text-white cursor-pointer transition ease-out hover:scale-125"
           onClick={handleLocationClick}
         />
+         </div>
       </div>
 
-      <div className="flex flex-row w-1/4 items-center justify-center">
+      <div className="flex flex-row w-1/4 items-center justify-center mx-3">
         <button name="metric" className="text-xl font-light text-white transition ease-out hover:scale-125" onClick={handleUnitsChange}>
           {" "}
           °C{" "}

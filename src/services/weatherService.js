@@ -27,11 +27,11 @@ const formatCurrentWeather = (data) => {
     } = data
 
     // geting the details and icons from api
-    const {main: description, icon} = weather[0]
+    const {main: main, description, icon} = weather[0]
 
     //return all the data formatted
  return {lat, lon, temp, feels_like, temp_max, temp_min, 
-     humidity, name, dt, country, sunrise, sunset, description, icon, speed}
+     humidity, name, dt, country, sunrise, sunset, description, icon, main, speed}
 }
 
 
@@ -86,7 +86,7 @@ const getFormattedWeatherData = async (searchParams) => {
 }
 
 // formatting the time to the correct time and date
-const formatToLocalTime = (secs, zone, format = "cccc, dd, LLL, yyyy' | Local time: 'hh:mm a") => DateTime.fromSeconds(secs).
+const formatToLocalTime = (secs, zone, format = " h:mm a' 'cccc, dd, LLL, yy ") => DateTime.fromSeconds(secs).
 setZone(zone).toFormat(format)
 
 //getting the correct icon to display in app 
