@@ -73,8 +73,8 @@ function App() {
 
   // {`mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
   return (
-    <div className=' bg-black/80 h-screen '>
-      <div className={`bg-cover max-w-7xl overflow-hidden   w-11/12 h-auto  2xsm:h-5/6 md:h-5/6 lg:h-5/6 xl:h-4/6 2xl:h-3/6 fixed top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] shadow-xl shadow-black/70 ${formatBackground()}`}>
+    <div className=' bg-sky-500/10 h-screen '>
+      <div className={`bg-cover bg-no-repeat rounded-xl  w-11/12 h-5/6  xl:h-4/6 md:h-4/6  md:w-9/12 lg:w-7/12 lg:h-4/6 xl:w-6/12 2xl:w-5/12 fixed top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] shadow-xl shadow-black/70 ${formatBackground()}`}>
         <div className="grid h-full "> 
 
           <div className=" grid grid-cols-1 bg-transparent 
@@ -119,7 +119,7 @@ function App() {
 
 export default App;
 
-
+//max-w-7xl overflow-hidden   w-11/12 h-auto  2xsm:h-5/6 md:h-5/6 lg:h-5/6 xl:h-4/6 2xl:h-3/6 fixed top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] shadow-xl shadow-black/70 
 
 
 
