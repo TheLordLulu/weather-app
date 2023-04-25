@@ -39,12 +39,12 @@ function Inputs({setQuery, units, setUnits}) {
 
   return (
     <div className="flex fixed left-[50%] top-[95%] transform translate-x-[-50%] translate-y-[-50%] ">
-      <div className="flex flex-row w-auto justify-center space-x-1">
+      <div className="flex flex-row  justify-center ">
         <input
         value={city}
         onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
-          className="text-sm font-medium text-white p-1 shadow-xl bg-transparent focus:outline-none capitalize placeholder:lowercase    xsm:text-md sm:text-lg md:text-lg lg:text-xl "
+          className="text-sm font-medium w-auto text-white p-1 shadow-xl bg-transparent focus:outline-none capitalize placeholder:lowercase    xsm:text-md sm:text-lg md:text-lg lg:text-xl "
           placeholder="Search..."
         />
          
