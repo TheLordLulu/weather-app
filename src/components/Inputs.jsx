@@ -39,7 +39,7 @@ function Inputs({setQuery, units, setUnits}) {
 
   return (
     <div className="flex fixed left-[50%] top-[95%] transform translate-x-[-50%] translate-y-[-50%] ">
-      <div className="flex flex-row w-full justify-center space-x-2">
+      <div className="flex flex-row w-auto justify-center space-x-1">
         <input
         value={city}
         onChange={(e) => setCity(e.currentTarget.value)}
