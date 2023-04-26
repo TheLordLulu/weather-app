@@ -44,7 +44,7 @@ function Inputs({setQuery, units, setUnits}) {
         value={city}
         onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
-          className="text-sm font-medium w-auto text-white p-1 shadow-xl bg-transparent focus:outline-none capitalize placeholder:lowercase    xsm:text-md sm:text-lg md:text-lg lg:text-xl "
+          className=" flex justify-center text-sm font-medium border-none outline-none text-white p-1 shadow-xl bg-transparent focus:outline-none capitalize placeholder:lowercase    xsm:text-md sm:text-lg md:text-lg lg:text-xl "
           placeholder="Search..."
         />
          
